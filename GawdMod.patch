@@ -1,25 +1,9 @@
-Index: GawdMod/src/avt.java
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- GawdMod/src/avt.java	(date 1433504021000)
-+++ GawdMod/src/avt.java	(revision )
-@@ -101,7 +101,7 @@
- 
- 	public void a(eu var, int var1) {
- 		this.a(var, var1, this.f.q.e(), false);
--		a.info("[CHAT] " + var.c());
-+		a.info("[CHAT] " + var.d());
- 	}
- 
- 	private void a(eu var, int var1, int var2, boolean var3) {
 Index: GawdMod/src/net/minecraft/client/ClientBrandRetriever.java
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- GawdMod/src/net/minecraft/client/ClientBrandRetriever.java	(date 1433504021000)
+--- GawdMod/src/net/minecraft/client/ClientBrandRetriever.java	(date 1443809476000)
 +++ GawdMod/src/net/minecraft/client/ClientBrandRetriever.java	(revision )
 @@ -5,6 +5,6 @@
  	}
@@ -34,13 +18,29 @@ IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- GawdMod/src/bdf.java	(date 1433504021000)
+--- GawdMod/src/bdf.java	(date 1443809476000)
 +++ GawdMod/src/bdf.java	(revision )
 @@ -20,6 +20,7 @@
- 			this.c.clear();
- 			dn var = dx.a(new File(this.b.v, "servers.dat"));
- 			if(var == null) {
-+				this.c.add(new bde("GawdScape", "mc.gawdscape.com", false));
- 				return;
- 			}
+             this.c.clear();
+             dn var = dx.a(new File(this.b.v, "servers.dat"));
+             if(var == null) {
++                this.c.add(new bde("GawdScape", "mc.gawdscape.com", false));
+                 return;
+             }
  
+Index: GawdMod/src/avt.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- GawdMod/src/avt.java	(date 1443809476000)
++++ GawdMod/src/avt.java	(revision )
+@@ -101,7 +101,7 @@
+ 
+     public void a(eu var, int var1) {
+         this.a(var, var1, this.f.q.e(), false);
+-        a.info("[CHAT] " + var.c());
++        a.info("[CHAT] " + var.d());
+     }
+ 
+     private void a(eu var, int var1, int var2, boolean var3) {
